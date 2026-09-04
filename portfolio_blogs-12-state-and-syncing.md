@@ -24,7 +24,7 @@ I updated the CMS logic so that immediately after a successful `PUT` request, it
 
 Only when the API returns a `status: "completed"` and `conclusion: "success"` does the CMS UI flash a green success message and allow me to navigate to the live site. 
 
-![Polling GitHub Actions Demo](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/YOUR_GIF_NAME.gif)
+![Polling GitHub Actions Demo](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog12A.gif)
 *(Video: The React CMS polling the GitHub Actions API to track deployment state.)*
 
 ## The Browser Cache Invalidation

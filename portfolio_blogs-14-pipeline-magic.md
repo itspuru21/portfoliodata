@@ -23,7 +23,7 @@ Here is the exact flow I engineered into my `.github/workflows/deploy.yml` file:
 3.  **The Build Step:** Remember our Tailwind CSS setup from [Blog 5](#/blog/2026-09-04-portfolio-blog-5-taming-tailwind-css-styling-a-modular-static-site)? The pipeline runs `npx tailwindcss -i ./src/input.css -o ./public/output.css --minify` to generate a fresh, compressed stylesheet.
 4.  **The Deployment:** Finally, it takes the newly compiled CSS, along with all my HTML, JS, and Markdown files, and forces a deployment to a separate branch called `gh-pages`.
 
-![Screenshot of a successful GitHub Actions run](/portfolio/images/blog14A.png)
+![Screenshot of a successful GitHub Actions run](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog14A.png)
 *(Caption: The CI/CD pipeline in action, automatically building and deploying the portfolio.)*
 
 ## The Beauty of the gh-pages Branch

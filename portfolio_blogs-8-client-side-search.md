@@ -31,7 +31,7 @@ Instead of making new network requests every time a user clicks a category tag, 
 
 When a user clicks the "Terraform" tag, the script executes an `Array.prototype.filter()` operation against our `blogData` array. It instantly creates a new array containing only the Terraform posts, clears the current blog list container, and re-injects only the matching HTML components.
 
-![Client-Side Search Demo](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/YOUR_GIF_NAME.gif)
+![Client-Side Search Demo](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog8A.gif)
 *(Video: Instantaneous, zero-latency filtering achieved through pure client-side processing.)*
 
 ## Engineering Benefits

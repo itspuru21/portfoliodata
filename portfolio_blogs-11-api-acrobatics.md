@@ -20,18 +20,16 @@ With text publishing secured, I had to decide how to handle images. I needed to 
 
 In a traditional cloud setup, this is where you provision an AWS S3 bucket. Some developers also use external CDNs or image hosting hacks to keep their repository size small. However, for Phase 1, I decided to prioritize **strict version control and atomic deployments**.
 
-Instead of outsourcing image hosting, I chose to store all media directly inside the `public/images/` folder of the repository. 
+Instead of outsourcing image hosting, I chose to store all media directly inside other `repositery/portfoliodata/images` folder of the repository. 
 
 ```text
-📁 my-devops-portfolio
- ├── 📁 content
- └── 📁 public
-      └── 📁 images
-           ├── 📄 aws-architecture.png
-           └── 📄 terminal-error.png
+📁 portfoliodata
+ └── 📁 images
+      ├── 📄 blog9A.png
+      └── 📄 blog10A.png
 ```
 
-![Screenshot of the public/images directory](/portfolio/images/blog11A.png)
+![Screenshot of the public/images directory](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog11A.png)
 *(Caption: Keeping static assets self-contained within the repository.)*
 
 ## Why This Works for Now

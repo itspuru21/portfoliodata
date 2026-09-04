@@ -22,7 +22,7 @@ To solve this, I pushed the data processing to the client. I implemented a vanil
 2.  **The Parser:** Once the raw text is fetched, a lightweight Markdown parser library (or custom regex logic) converts the markdown syntax (like `## Headings` and `**bold text**`) into raw HTML strings.
 3.  **The Injection:** The newly generated HTML string is securely injected into the DOM, specifically into the content containers of the expandable cards we built earlier.
 
-![Screenshot of the fetch API and parser logic in JS](/portfolio/images/blog7A.png)
+![Screenshot of the fetch API and parser logic in JS](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog7A.png)
 *(Caption: The core JavaScript engine fetching and parsing Markdown on the fly.)*
 
 ## Handling Metadata (Frontmatter)

@@ -23,9 +23,6 @@ If you think about it from a data architecture perspective:
 
 The GitHub REST API allows you to perform full CRUD (Create, Read, Update, Delete) operations on repository contents. You can send a `PUT` request with base64-encoded text to the API, and GitHub will automatically create a new file and generate a commit for you. 
 
-![Screenshot of Postman interacting with the GitHub API](/portfolio/images/blog9A.png)
-*(Caption: Testing CRUD operations against the GitHub API using Postman.)*
-
 ## The Blueprint for the Bespoke CMS
 
 This realization changed everything. I didn't need to provision a Postgres database on AWS or spin up a Node backend. I just needed to build a frontend application capable of authenticating with the GitHub API. 

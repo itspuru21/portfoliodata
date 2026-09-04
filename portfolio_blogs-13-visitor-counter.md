@@ -24,7 +24,7 @@ Why include a flawed counter at all? Because I am not trying to fake impressions
 
 The visitor counter is purely for aesthetics. It serves as a visual proof-of-concept that this static architecture can successfully make external API calls, handle asynchronous data fetching, and update the UI dynamically without a backend server. It is a frontend trick, not a data metric.
 
-![Screenshot of the visitor counter on the UI](/portfolio/images/blog13A.png)
+![Screenshot of the visitor counter on the UI](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog13A.png)
 *(Caption: The dynamic counter UI—fetching data on the fly, even if it is just counting raw page hits.)*
 
 ## Implementing the Endpoint

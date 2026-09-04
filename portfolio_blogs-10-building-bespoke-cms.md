@@ -20,7 +20,7 @@ Building a CMS requires handling complex, dynamic state:
 
 Vanilla JavaScript would have turned into messy code very quickly under these requirements. Therefore, I spun up a lightweight React application strictly confined to the `/admin` path. 
 
-![Screenshot of the React CMS UI](/portfolio/images/blog10A.png)
+![Screenshot of the React CMS UI](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog10A.png)
 *(Caption: The bespoke React Admin panel interface.)*
 
 ## Constructing the Payload

@@ -25,8 +25,10 @@ permissions:
 ```
 Once I added this block to my `.github/workflows/deploy.yml`, the runner was authorized to push the compiled artifacts.
 
-![Screenshot of a failed GitHub Actions log](/portfolio/images/blog15A.png)
-*(Caption: Digging into the terminal logs to find the root cause of the deployment failure.)*
+![Screenshot of a failed GitHub Actions log](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog15A.png)
+*(Caption: An image from the github Actions deployment that failed due to not having the permission.)*
+
+*(also i had forgotten to take the screen shot when error occoured so the screenshot is recreation of that same error again by me)*
 
 ## Failure 2: The Infinite Loop
 
