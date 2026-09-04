@@ -34,17 +34,13 @@ If you paste an image into a dummy GitHub Issue, GitHub uploads it to their own 
 
 But as an engineer, this felt wrong. It is an exploit, not an architecture. Relying on an undocumented loophole is a severe DevOps anti-pattern. Eventually, GitHub is going to fix this, patch the exploit, or periodically clear out orphaned assets from Issues. If that happens, every single image on my portfolio would instantly break. I needed a legitimate, stable external storage solution.
 
-## Failure 4: The Google Drive Hotlink Block
+## Failure 4: The Google Drive Scroll Trap
 
-I pivoted to Google Drive. It was free, decoupled from my code, and legitimate. I uploaded my assets and generated direct download links using the `uc?export=view` format. 
+I pivoted to Google Drive. It was free, completely decoupled from my code, and legitimate. Because Google blocks hotlinking for standard Markdown images, I generated embed links and injected raw HTML `<iframe>` tags into my posts.
 
-But Google aggressively blocks hotlinking to prevent people from using Drive as a free Content Delivery Network. The browser threw CORS (Cross-Origin Resource Sharing) and permission errors. 
+But this created a terrible User Experience (UX). Because the iframe is basically a window to another website, it captured the user's mouse wheel. If a user was scrolling down the blog post and their cursor happened to cross the image, the blog would stop scrolling, and the Google Drive iframe would intercept the scroll to zoom into the image. The user had to consciously move their mouse out of the image box just to continue reading.
 
-**The Final Solution:** I had to pivot to an iframe embed architecture. Instead of standard Markdown image tags, I injected raw HTML into the Markdown using Google's official `/preview` endpoint, wrapped in Tailwind classes for responsiveness:
-```html
-<iframe src="[https://drive.google.com/file/d/YOUR_FILE_ID/preview](https://drive.google.com/file/d/YOUR_FILE_ID/preview)" className="w-full aspect-video rounded-xl shadow-lg" allow="autoplay"></iframe>
-```
-This solved everything. It bypassed the hotlink blocks, allowed seamless media streaming, and achieved zero repository bloat without relying on fragile exploits.
+**The Final Solution:** I ditched Google Drive entirely. I created a secondary, dedicated GitHub repository called `portfoliodata` specifically to act as a media CDN. By uploading images there and using the `raw.githubusercontent.com` URLs, I get clean, standard Markdown images that render perfectly, don't trap the scroll wheel, and keep my main codebase completely free of media bloat.
 
 ## Failure 5: The URL Slug Nightmare
 
@@ -58,4 +54,4 @@ URL parsers hate colons, nested quotation marks, and special characters. My auto
 
 You rarely get the architecture right on the very first commit. Building this custom GitOps CMS forced me to confront edge cases in build tools, browser caching, and REST API limitations. 
 
-The final product is my portfolio costing me nothing to keep it up and can later be easily deployed on the actual devops/cloud infrastructure very easily which we call migration and upgrad
+The final product isn't just a portfolio—it is a battle-tested infrastructure.
