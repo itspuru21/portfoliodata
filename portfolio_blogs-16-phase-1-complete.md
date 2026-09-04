@@ -34,4 +34,4 @@ The goal is to take this modular repository we have structured and deploy it int
 
 Phase 1 proved I can build a clever, scrappy solution. Phase 2 will prove I can engineer enterprise-grade infrastructure. 
 
-In [Blog 17](#/blog/portfolio-blog-17-escaping-github-pages), I will break down the exact limitations of our current setup and the detailed reasoning behind choosing AWS and EKS for the migration.
+In [Blog 17](#/blog/2026-09-04-portfolio-blog-17-escaping-github-pages-the-case-for-aws), I will break down the exact limitations of our current setup and the detailed reasoning behind choosing AWS and EKS for the migration.

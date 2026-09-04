@@ -4,7 +4,7 @@ description: "Embracing the DevOps mindset by documenting the pipeline failures,
 date: "2026-09-03"
 ---
 
-In [Blog 14](#/blog/portfolio-blog-14-pipeline-magic), I outlined the elegant CI/CD pipeline I built using GitHub Actions to automatically compile my Tailwind CSS and deploy the site. 
+In [Blog 14](#/blog/2026-09-04-portfolio-blog-14-pipeline-magic-automating-the-build), I outlined the elegant CI/CD pipeline I built using GitHub Actions to automatically compile my Tailwind CSS and deploy the site. 
 
 It sounds perfect on paper. But any seasoned Cloud or DevOps engineer will tell you the truth: pipelines almost never work on the first try. Writing the YAML file is only half the battle; debugging it is the rest.
 
@@ -52,4 +52,4 @@ These failures weren't setbacks; they were the most valuable part of the build. 
 
 This concludes Phase 1 of the portfolio project. I now have a fully modular, GitOps-driven, serverless Markdown architecture with an automated deployment pipeline. 
 
-But as I stated back in Day 1, this is just a stepping stone. In [Blog 16](#/blog/portfolio-blog-16-phase-1-complete), I will summarize what we achieved and outline the blueprint for Phase 2: escaping GitHub Pages and migrating this entire architecture to AWS EKS using Terraform!
+But as I stated back in Day 1, this is just a stepping stone. In [Blog 16](#/blog/2026-09-04-portfolio-blog-16-phase-1-complete-the-stepping-stone-to-the-cloud), I will summarize what we achieved and outline the blueprint for Phase 2: escaping GitHub Pages and migrating this entire architecture to AWS EKS using Terraform!

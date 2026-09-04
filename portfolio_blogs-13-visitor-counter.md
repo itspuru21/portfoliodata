@@ -42,4 +42,4 @@ fetch('[https://api.countapi.xyz/hit/my-devops-portfolio/visits](https://api.cou
 
 By keeping the scope of this feature strictly aesthetic, I avoided over-engineering a complex session-tracking system for Phase 1 of this project. 
 
-With the dynamic UI elements out of the way, it is time to look at the automation holding this entire repository together. In [Blog 14](#/blog/portfolio-blog-14-pipeline-magic), we will dive into the GitHub Actions CI/CD pipeline!
+With the dynamic UI elements out of the way, it is time to look at the automation holding this entire repository together. In [Blog 14](#/blog/2026-09-04-portfolio-blog-14-pipeline-magic-automating-the-build), we will dive into the GitHub Actions CI/CD pipeline!

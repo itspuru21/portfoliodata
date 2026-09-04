@@ -20,7 +20,7 @@ Here is the exact flow I engineered into my `.github/workflows/deploy.yml` file:
 
 1.  **The Trigger:** The pipeline initiates `on: push` to the `main` branch.
 2.  **Environment Setup:** It provisions an Ubuntu runner and sets up a Node.js environment.
-3.  **The Build Step:** Remember our Tailwind CSS setup from [Blog 5](#/blog/portfolio-blog-5-taming-tailwind)? The pipeline runs `npx tailwindcss -i ./src/input.css -o ./public/output.css --minify` to generate a fresh, compressed stylesheet.
+3.  **The Build Step:** Remember our Tailwind CSS setup from [Blog 5](#/blog/2026-09-04-portfolio-blog-5-taming-tailwind-css-styling-a-modular-static-site)? The pipeline runs `npx tailwindcss -i ./src/input.css -o ./public/output.css --minify` to generate a fresh, compressed stylesheet.
 4.  **The Deployment:** Finally, it takes the newly compiled CSS, along with all my HTML, JS, and Markdown files, and forces a deployment to a separate branch called `gh-pages`.
 
 ![Screenshot of a successful GitHub Actions run](/portfolio/images/blog14A.png)
@@ -36,4 +36,4 @@ This strict separation of source code and compiled artifacts ensures my reposito
 
 With this pipeline, my publishing workflow is now completely frictionless. I write a post in the browser, hit publish, and the pipeline does the rest. 
 
-But as any DevOps engineer knows, pipelines don't always run perfectly on the first try. In [Blog 15](#/blog/portfolio-blog-15-when-actions-fail), I will document the CI/CD failures I encountered and how I debugged them.
+But as any DevOps engineer knows, pipelines don't always run perfectly on the first try. In [Blog 15](#/blog/2026-09-04-portfolio-blog-15-when-actions-fail-debugging-ci-cd), I will document the CI/CD failures I encountered and how I debugged them.

@@ -4,7 +4,7 @@ description: "Translating the migration strategy into a concrete architectural b
 date: "2026-09-03"
 ---
 
-In [Blog 17](#/blog/portfolio-blog-17-escaping-github-pages), I established exactly why this portfolio needs to leave the managed "Black Box" of GitHub Pages and migrate to a self-managed AWS environment using containerization. 
+In [Blog 17](#/blog/2026-09-04-portfolio-blog-17-escaping-github-pages-the-case-for-aws), I established exactly why this portfolio needs to leave the managed "Black Box" of GitHub Pages and migrate to a self-managed AWS environment using containerization. 
 
 Before provisioning a single server, you need a plan. Drawing out the infrastructure ensures you understand the networking, security, and traffic flow required to keep a highly available application running. Here is the concrete AWS blueprint for Phase 2 of this portfolio project.
 
@@ -24,7 +24,7 @@ By placing the EKS nodes in private subnets, we drastically reduce the attack su
 
 Once the network is secure, we introduce the compute layer. 
 
-As discussed in [Blog 17](#/blog/portfolio-blog-17-escaping-github-pages), we are using Amazon Elastic Kubernetes Service (EKS) to orchestrate our Docker containers. 
+As discussed in [Blog 17](#/blog/2026-09-04-portfolio-blog-17-escaping-github-pages-the-case-for-aws), we are using Amazon Elastic Kubernetes Service (EKS) to orchestrate our Docker containers. 
 *   **The Control Plane:** AWS manages the highly available EKS control plane (the Kubernetes master nodes) across multiple Availability Zones.
 *   **The Data Plane (Worker Nodes):** I will provision Managed Node Groups consisting of EC2 instances running in my private subnets. These nodes will pull the Dockerized portfolio image and run it as Kubernetes Pods.
 
@@ -41,4 +41,4 @@ So, how does a user actually see the website if the containers are locked inside
 
 This blueprint transforms my portfolio from a simple static site into an enterprise-grade cloud application. But I refuse to build this by clicking through the AWS Console manually. 
 
-In [Blog 19](#/blog/portfolio-blog-19-infrastructure-as-code), I will break down how we take this entire diagram and automate its creation using **Terraform** (Infrastructure as Code).
+In [Blog 19](#/blog/2026-09-04-portfolio-blog-19-infrastructure-as-code-automating-aws-with-terraform), I will break down how we take this entire diagram and automate its creation using **Terraform** (Infrastructure as Code).

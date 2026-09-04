@@ -4,13 +4,13 @@ description: "Developing a dedicated React application to serve as the administr
 date: "2026-09-03"
 ---
 
-With the conceptual blueprint established in [Blog 9](#/blog/portfolio-blog-9-the-crazy-idea), it was time to build the actual content creation engine. We had already reserved an `/admin` directory for this exact purpose back in [Blog 4](#/blog/portfolio-blog-4-laying-groundwork). 
+With the conceptual blueprint established in [Blog 9](#/blog/2026-09-04-portfolio-blog-9-the-crazy-idea-using-gitHub-as-a-headless-database), it was time to build the actual content creation engine. We had already reserved an `/admin` directory for this exact purpose back in [Blog 4](#/blog/2026-09-04-portfolio-blog-4-laying-groundwork-structuring-for-scalability). 
 
 The goal was to build an internal tool that looked and functioned like a professional CMS (think WordPress or Ghost), but operated entirely in the browser and communicated exclusively with the GitHub REST API.
 
 ## Why React for the Admin?
 
-For the public-facing portfolio, I was adamant about using pure, vanilla JavaScript to ensure zero latency and a lightweight build [as seen in Blog 6](#/blog/portfolio-blog-6-interactive-ui). However, an administrative CMS is a different beast entirely. 
+For the public-facing portfolio, I was adamant about using pure, vanilla JavaScript to ensure zero latency and a lightweight build [as seen in Blog 6](#/blog/2026-09-04-portfolio-blog-6-interactive-ui-a-devOps-approach-to-frontend). However, an administrative CMS is a different beast entirely. 
 
 Building a CMS requires handling complex, dynamic state:
 *   Real-time tracking of form inputs (Title, Date, Description).
@@ -25,7 +25,7 @@ Vanilla JavaScript would have turned into messy code very quickly under these re
 
 ## Constructing the Payload
 
-The core function of this React app is to take the user's input and format it into a string that our custom Markdown engine can later parse [like we built in Blog 7](#/blog/portfolio-blog-7-markdown-engine). 
+The core function of this React app is to take the user's input and format it into a string that our custom Markdown engine can later parse [like we built in Blog 7](#/blog/2026-09-04-portfolio-blog-7-markdown-engine-rendering-content-without-a-server). 
 
 When I fill out the form and hit "Publish", a JavaScript function acts as a payload constructor. It takes the metadata state variables (Title, Description, Date) and dynamically wraps them in YAML frontmatter syntax `---`, then appends the raw Markdown body text below it. 
 

@@ -4,9 +4,9 @@ description: "How I engineered a client-side Markdown parser to fetch, process, 
 date: "2026-09-03"
 ---
 
-In [Blog 6](#/blog/portfolio-blog-6-interactive-ui), I established a lightweight, interactive frontend shell. But an empty shell isn't very useful. It was time to connect the UI to my "headless database" [as designed in Blog 3](#/blog/portfolio-blog-3-pivot-to-gitops). 
+In [Blog 6](#/blog/2026-09-04-portfolio-blog-6-interactive-ui-a-devOps-approach-to-frontend), I established a lightweight, interactive frontend shell. But an empty shell isn't very useful. It was time to connect the UI to my "headless database" [as designed in Blog 3](#/blog/2026-09-03-portfolio-blog-3-pivot-to-gitops-designing-a-database-less-architecture). 
 
-The goal was simple: write my blogs in pure Markdown (`.md`), commit them to the `/content` directory [outlined in Blog 4](#/blog/portfolio-blog-4-laying-groundwork), and have the portfolio dynamically render them as styled HTML. 
+The goal was simple: write my blogs in pure Markdown (`.md`), commit them to the `/content` directory [outlined in Blog 4](#/blog/2026-09-04-portfolio-blog-4-laying-groundwork-structuring-for-scalability), and have the portfolio dynamically render them as styled HTML. 
 
 ## The Browser Bottleneck
 
@@ -33,4 +33,4 @@ Before parsing the body of the Markdown, my script intercepts the raw text, spli
 
 This engine is the beating heart of the portfolio. It is the core mechanism that makes my static GitHub Pages site function like a dynamic, database-driven application. 
 
-With content successfully rendering on the screen, the next logical step was data organization. In [Blog 8](#/blog/portfolio-blog-8-client-side-search), I will break down how I engineered dynamic client-side search and category filtering using pure JavaScript arrays.
+With content successfully rendering on the screen, the next logical step was data organization. In [Blog 8](#/blog/2026-09-04-portfolio-blog-8-client-side-search-dynamic-filtering-without-a-database), I will break down how I engineered dynamic client-side search and category filtering using pure JavaScript arrays.

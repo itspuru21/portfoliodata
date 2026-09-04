@@ -4,7 +4,7 @@ description: "Eliminating ClickOps by using Terraform to provision the VPC, Subn
 date: "2026-09-03"
 ---
 
-In [Blog 18](#/blog/portfolio-blog-18-aws-blueprint), we designed a highly secure, scalable AWS architecture featuring a custom VPC, private subnets, and an Amazon EKS cluster. 
+In [Blog 18](#/blog/2026-09-04-portfolio-blog-18-aws-blueprint-designing-the-cloud-architecture), we designed a highly secure, scalable AWS architecture featuring a custom VPC, private subnets, and an Amazon EKS cluster. 
 
 The next step is actually building it. But there is a massive difference between *knowing* how to build cloud infrastructure and doing it *correctly*. Logging into the AWS Management Console and manually clicking through menus to create VPCs and spin up EC2 instances is known as "ClickOps."
 
@@ -53,4 +53,4 @@ Running `terraform apply` and watching dozens of AWS resources spin up automatic
 
 With the EKS cluster now fully operational in our private subnets, Phase 2 is almost complete. The application is running. But in a distributed containerized system, how do you know if things are actually healthy? 
 
-In [Blog 20](#/blog/portfolio-blog-20-the-missing-piece)—the final post of this sprint—we will tackle the absolute necessity of Observability and Monitoring in a Kubernetes environment.
+In [Blog 20](#/blog/2026-09-04-portfolio-blog-20-the-missing-piece-monitoring-and-observability)—the final post of this sprint—we will tackle the absolute necessity of Observability and Monitoring in a Kubernetes environment.

@@ -40,4 +40,4 @@ When I write a blog post in the CMS, I simply reference the relative path (e.g.,
 
 From a DevOps perspective, keeping images in the repository has a distinct advantage: **State consistency**. The blog post and the image it references are tied to the exact same Git commit. If I roll back the repository to a state from a month ago, the images roll back perfectly with it. There are no broken links caused by an external S3 bucket changing. 
 
-With content and media perfectly handled and self-contained, there was only one piece of the frontend puzzle left: keeping everything synchronized. In [Blog 12](#/blog/portfolio-blog-12-state-and-syncing), I will break down how we forced the static frontend to stay perfectly in sync with the rapid updates coming from our React CMS.
+With content and media perfectly handled and self-contained, there was only one piece of the frontend puzzle left: keeping everything synchronized. In [Blog 12](#/blog/2026-09-04-portfolio-blog-12-state-and-syncing-forcing-a-static-site-to-act-dynamic), I will break down how we forced the static frontend to stay perfectly in sync with the rapid updates coming from our React CMS.
