@@ -25,7 +25,7 @@ I initialized a fresh Git repository and designed a strict directory hierarchy:
  └── 📁 src                 # Frontend UI components and logic
 ```
 
-![Screenshot of the new directory structure in VS Code](/portfolio/images/blog4A.png)
+![Screenshot of the new directory structure in VS Code](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog4A.png)
 *(Caption: The new, decoupled repository structure.)*
 
 ## Why This Structure Matters

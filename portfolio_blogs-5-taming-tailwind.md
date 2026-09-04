@@ -24,7 +24,7 @@ The setup boils down to configuring our main entry stylesheet (`src/index.css`).
 @tailwind utilities;
 ```
 
-![Screenshot of your index.css file showing Tailwind directives](/portfolio/images/blog5A.png)
+![Screenshot of your index.css file showing Tailwind directives](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog5A.png)
 *(Caption: Configuring Tailwind inside our `src/index.css` entry point for Vite.)*
 
 ## Seamless CI/CD Integration

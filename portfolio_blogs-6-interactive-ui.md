@@ -16,7 +16,7 @@ In a framework like React, this is a trivial state management task. But in our [
 
 Instead of writing repetitive code for every single card, I treated the UI components like modular infrastructure. I wrote a single, reusable JavaScript function that dynamically targets data attributes (`data-target`) on the HTML elements to toggle the hidden classes we generated with Tailwind in [Blog 5](#/blog/2026-09-04-portfolio-blog-5-taming-tailwind-css-styling-a-modular-static-site).
 
-![Expandable Project Cards Demo](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/YOUR_GIF_NAME.gif)
+![Expandable Project Cards Demo](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog6A.gif)
 *(Video: Demonstrating the lightweight, vanilla JS expandable project cards.)*
 
 ## Modularity Over Complexity
