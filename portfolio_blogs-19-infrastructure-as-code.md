@@ -4,7 +4,7 @@ description: "Eliminating ClickOps by using Terraform to provision the VPC, Subn
 date: "2026-09-03"
 ---
 
-In [Blog 18](#/blog/2026-09-04-portfolio-blog-18-aws-blueprint-designing-the-cloud-architecture), we designed a highly secure, scalable AWS architecture featuring a custom VPC, private subnets, and an Amazon EKS cluster. 
+In [Blog 18](#/blog/2026-09-04-portfolio-blog-18-the-aws-blueprint-designing-the-cloud-architecture), we designed a highly secure, scalable AWS architecture featuring a custom VPC, private subnets, and an Amazon EKS cluster. 
 
 The next step is actually building it. But there is a massive difference between *knowing* how to build cloud infrastructure and doing it *correctly*. Logging into the AWS Management Console and manually clicking through menus to create VPCs and spin up EC2 instances is known as "ClickOps."
 

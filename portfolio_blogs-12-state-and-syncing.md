@@ -29,7 +29,7 @@ Only when the API returns a `status: "completed"` and `conclusion: "success"` do
 
 ## The Browser Cache Invalidation
 
-The second hurdle was the browser itself. In [Blog 7](#/blog/2026-09-04-portfolio-blog-7-markdown-engine-rendering-content-without-a-server), we built a vanilla JavaScript engine that fetches our metadata and Markdown files. Browsers love to aggressively cache static files like `.json` and `.md` to save bandwidth.
+The second hurdle was the browser itself. In [Blog 7](#/blog/2026-09-04-portfolio-blog-7-the-markdown-engine-rendering-content-without-a-server), we built a vanilla JavaScript engine that fetches our metadata and Markdown files. Browsers love to aggressively cache static files like `.json` and `.md` to save bandwidth.
 
 Even if GitHub Pages successfully deployed the new content, my browser would often load the old, cached version of the blog list. 
 
@@ -46,4 +46,4 @@ Because the URL is technically different every single millisecond, the browser i
 
 With state and syncing fully resolved, Day 3 of the build was complete. The CMS was robust, secure, and fully synchronized with the frontend. 
 
-Now, it is time to move on to Day 4: injecting truly dynamic features into our static site. In [Blog 13](#/blog/2026-09-04-portfolio-blog-13-visitor-counter-tracking-hits), I will break down how I built an automated visitor counter without using a database!
+Now, it is time to move on to Day 4: injecting truly dynamic features into our static site. In [Blog 13](#/blog/2026-09-04-portfolio-blog-13-the-database-less-counter-tracking-hits), I will break down how I built an automated visitor counter without using a database!

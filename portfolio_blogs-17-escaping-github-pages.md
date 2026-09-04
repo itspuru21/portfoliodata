@@ -35,4 +35,4 @@ In the enterprise world, high availability and self-healing are non-negotiable. 
 
 Migrating this static-dynamic site to Kubernetes might seem like massive overkill—and for a simple blog, it absolutely is. But this is not just a blog; it is a live demonstration of my engineering capabilities. Deploying this architecture on EKS proves I can handle container orchestration, manage node groups, and configure ingress controllers.
 
-In [Blog 18](#/blog/2026-09-04-portfolio-blog-18-aws-blueprint-designing-the-cloud-architecture), we will translate this strategy into a concrete architectural blueprint, detailing exactly how our VPC, Subnets, and EKS clusters will be laid out in the AWS Cloud.
+In [Blog 18](#/blog/2026-09-04-portfolio-blog-18-the-aws-blueprint-designing-the-cloud-architecture), we will translate this strategy into a concrete architectural blueprint, detailing exactly how our VPC, Subnets, and EKS clusters will be laid out in the AWS Cloud.

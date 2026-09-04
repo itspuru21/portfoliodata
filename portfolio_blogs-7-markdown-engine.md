@@ -6,7 +6,7 @@ date: "2026-09-03"
 
 In [Blog 6](#/blog/2026-09-04-portfolio-blog-6-interactive-ui-a-devOps-approach-to-frontend), I established a lightweight, interactive frontend shell. But an empty shell isn't very useful. It was time to connect the UI to my "headless database" [as designed in Blog 3](#/blog/2026-09-03-portfolio-blog-3-pivot-to-gitops-designing-a-database-less-architecture). 
 
-The goal was simple: write my blogs in pure Markdown (`.md`), commit them to the `/content` directory [outlined in Blog 4](#/blog/2026-09-04-portfolio-blog-4-laying-groundwork-structuring-for-scalability), and have the portfolio dynamically render them as styled HTML. 
+The goal was simple: write my blogs in pure Markdown (`.md`), commit them to the `/content` directory [outlined in Blog 4](#/blog/2026-09-04-portfolio-blog-4-laying-the-groundwork-structuring-for-scalability), and have the portfolio dynamically render them as styled HTML. 
 
 ## The Browser Bottleneck
 
