@@ -24,7 +24,7 @@ The entire project consisted of exactly three files:
  └── 📄 script.js
 ```
 
-![Screenshot of my original 3-file portfolio website](/portfolio/images/blog1A.png)
+![Screenshot of my original 3-file portfolio website](https://raw.githubusercontent.com/itspuru21/portfoliodata/main/images/blog1A.png)
 *(Caption: A look back at the original static portfolio.)*
 
 ## Why It Worked (For a While)
